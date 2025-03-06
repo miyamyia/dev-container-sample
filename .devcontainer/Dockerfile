@@ -25,7 +25,7 @@ ENV TZ=Asia/Tokyo
 
 # 作業ディレクトリの所有者をnodeユーザーに変更
 USER root
-RUN mkdir -p /workspace/app/node_modules && chown -R node:node /workspace
+RUN mkdir -p /workspace/node_modules && chown -R node:node /workspace
 
 # 最終的にnodeユーザーに戻す
 USER node
